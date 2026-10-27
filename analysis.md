@@ -20,7 +20,7 @@ Let $F$ be AES-128, where keys, blocks, and tags are 16 bytes (128 bits), i.e., 
 * **$\mathsf{Vrfy}_k(m, t)$:** Given key $k$, message $m$, and candidate tag $t$:
   1. If $m$ is empty, $\vert{}m\vert{}$ is not a multiple of 128 bits (16 bytes), or $\vert{}t\vert{} \neq 128$ bits (16 bytes), output $0$ (reject).
   2. Otherwise, compute 
-  $\~{t} = \mathsf{Mac}_k(m)$ and compare $\~{t}$ with $t$ in constant time. Output $1$ (accept) if $\~{t} = t$, and $0$ (reject) otherwise.
+  $\~(\.tilde broke here.){t} = \mathsf{Mac}_k(m)$ and compare $\~(\.tilde broke here.){t}$ with $t$ in constant time. Output $1$ (accept) if $\~{t} = t$, and $0$ (reject) otherwise.
 
 ### b. Two Differences Between CBC-MAC and CBC-Mode Encryption
 
